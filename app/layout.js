@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://viramchoksi.com"),
+  metadataBase: new URL("https://viram-choksi.vercel.app"),
   title: "Viram Choksi | Portfolio",
   description:
     "Frontend Developer specializing in React.js, Vue.js, and modern web technologies. Building responsive and performant web applications with 2.8+ years of experience.",
@@ -30,7 +30,7 @@ export const metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://viramchoksi.com",
+    url: "https://viram-choksi.vercel.app",
     siteName: "Viram Choksi Portfolio",
     title: "Viram Choksi - Frontend Developer",
     description:

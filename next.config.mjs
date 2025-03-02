@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  sitemap: "https://viramchoksi.com/sitemap.xml",
+  sitemap: "https://viram-choksi.vercel.app/sitemap.xml",
   generateRobotsTxt: true,
 };
 

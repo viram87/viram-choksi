@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://viramchoksi.com/sitemap.xml
+Sitemap: https://viram-choksi.vercel.app/sitemap.xml
