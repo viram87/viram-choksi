@@ -1,0 +1,9 @@
+{
+  "name": "Viram Choksi | Portfolio",
+  "short_name": "Viram Portfolio",
+  "description": "Frontend Developer specializing in React.js, Vue.js, and modern web technologies.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0f172a"
+}

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://viram-choksi.vercel.app/sitemap.xml
