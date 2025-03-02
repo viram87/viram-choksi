@@ -26,7 +26,7 @@ export const metadata = {
     "Vue.js Developer",
   ],
   verification: {
-    google: "googlebd8b48520b2285bb.html",
+    google: "yDjsGMVfcx0Oj-SZUYlj_p1kfaRrq6hH3GR6Ov5Ad3I",
   },
   authors: [{ name: "Viram Choksi" }],
   creator: "Viram Choksi",
