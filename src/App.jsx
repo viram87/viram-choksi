@@ -26,7 +26,7 @@ const App = () => {
         
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://viramchoksi.com/" />
+        <meta property="og:url" content="https://viram-choksi.vercel.app/" />
         <meta property="og:title" content="Viram Choksi - Frontend Developer Portfolio" />
         <meta property="og:description" content="Frontend Developer specializing in React.js, Vue.js, and modern web technologies. Building responsive and performant web applications." />
         <meta property="og:image" content="/images/og-image.jpg" />
@@ -35,7 +35,7 @@ const App = () => {
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:url" content="https://viramchoksi.com/" />
+        <meta name="twitter:url" content="https://viram-choksi.vercel.app/" />
         <meta name="twitter:title" content="Viram Choksi - Frontend Developer Portfolio" />
         <meta name="twitter:description" content="Frontend Developer specializing in React.js, Vue.js, and modern web technologies. Building responsive and performant web applications." />
         <meta name="twitter:image" content="/images/og-image.jpg" />
@@ -48,7 +48,7 @@ const App = () => {
         <link rel="manifest" href="/site.webmanifest" />
         
         {/* Canonical URL */}
-        <link rel="canonical" href="https://viramchoksi.com/" />
+        <link rel="canonical" href="https://viram-choksi.vercel.app/" />
       </Helmet>
 
       <main className="bg-gradient-to-b from-[#0F172A] via-[#1E293B] to-[#0F172A] text-gray-300 overflow-hidden">
