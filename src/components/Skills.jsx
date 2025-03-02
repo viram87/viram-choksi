@@ -8,25 +8,29 @@ const SkillCategory = memo(({ category, index }) => (
     initial={{ y: 50, opacity: 0 }}
     whileInView={{ y: 0, opacity: 1 }}
     transition={{ duration: 0.5, delay: index * 0.1 }}
-    className='relative group'
+    className="relative group"
   >
     {/* Background Gradient */}
-    <div className={`absolute -inset-0.5 bg-gradient-to-r ${category.color} rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200`}></div>
-    
+    <div
+      className={`absolute -inset-0.5 bg-gradient-to-r ${category.color} rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200`}
+    ></div>
+
     {/* Content */}
-    <div className='relative bg-[#1E293B] rounded-lg p-6 h-full'>
-      <h3 className={`text-xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r ${category.color}`}>
+    <div className="relative bg-[#1E293B] rounded-lg p-6 h-full">
+      <h3
+        className={`text-xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r ${category.color}`}
+      >
         {category.title}
       </h3>
-      
-      <div className='flex flex-wrap gap-2'>
+
+      <div className="flex flex-wrap gap-2">
         {category.skills.map((skill, skillIndex) => (
           <Motion.span
             key={skillIndex}
             initial={{ scale: 0 }}
             whileInView={{ scale: 1 }}
             transition={{ duration: 0.3, delay: skillIndex * 0.05 }}
-            className='bg-[#0F172A] px-3 py-1.5 rounded-full text-sm border border-gray-700 hover:border-gray-500 transition-colors whitespace-nowrap'
+            className="bg-[#0F172A] px-3 py-1.5 rounded-full text-sm border border-gray-700 hover:border-gray-500 transition-colors whitespace-nowrap"
           >
             {skill}
           </Motion.span>
@@ -81,17 +85,35 @@ const Skills = () => {
   return (
     <>
       <Helmet>
-        <title>Skills & Technologies | Viram Choksi</title>
-        <meta name="description" content="Explore Viram Choksi's technical skills in React, Vue.js, TypeScript, and modern web development technologies" />
-        <meta name="keywords" content="Viram Choksi, frontend development, React, Vue.js, TypeScript, JavaScript, web development" />
+        <title>Crafted by Viram Choksi</title>
+        <meta
+          name="description"
+          content="Explore Viram Choksi's technical skills in React, Vue.js, TypeScript, and modern web development technologies"
+        />
+        <meta
+          name="keywords"
+          content="Viram Choksi, frontend development, React, Vue.js, TypeScript, JavaScript, web development"
+        />
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Skills & Technologies | Viram Choksi" />
-        <meta property="og:description" content="Explore Viram Choksi's technical skills in React, Vue.js, TypeScript, and modern web development technologies" />
+        <meta
+          property="og:title"
+          content="Skills & Technologies | Viram Choksi"
+        />
+        <meta
+          property="og:description"
+          content="Explore Viram Choksi's technical skills in React, Vue.js, TypeScript, and modern web development technologies"
+        />
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Skills & Technologies | Viram Choksi" />
-        <meta name="twitter:description" content="Explore Viram Choksi's technical skills in React, Vue.js, TypeScript, and modern web development technologies" />
+        <meta
+          name="twitter:title"
+          content="Skills & Technologies | Viram Choksi"
+        />
+        <meta
+          name="twitter:description"
+          content="Explore Viram Choksi's technical skills in React, Vue.js, TypeScript, and modern web development technologies"
+        />
       </Helmet>
 
       <div name="skills" className="min-h-screen py-20">
@@ -107,7 +129,7 @@ const Skills = () => {
             </span>
           </h2>
 
-          <div className='grid md:grid-cols-2 gap-6'>
+          <div className="grid md:grid-cols-2 gap-6">
             {skillCategories.map((category, index) => (
               <SkillCategory key={index} category={category} index={index} />
             ))}
@@ -125,7 +147,7 @@ const Skills = () => {
               {[
                 { name: "Frontend Development", level: 90 },
                 { name: "JavaScript & TypeScript", level: 92 },
-                { name: "React.js, Next.js & Vue.js", level: 85},
+                { name: "React.js, Next.js & Vue.js", level: 85 },
                 { name: "UI/UX Design & WCAG Compliance", level: 87 },
                 {
                   name: "State Management (Redux, Vuex Pinia)",
