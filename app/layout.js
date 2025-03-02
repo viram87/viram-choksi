@@ -25,6 +25,9 @@ export const metadata = {
     "JavaScript",
     "Vue.js Developer",
   ],
+  verification: {
+    google: "googlebd8b48520b2285bb.html",
+  },
   authors: [{ name: "Viram Choksi" }],
   creator: "Viram Choksi",
   openGraph: {

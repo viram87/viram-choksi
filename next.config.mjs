@@ -1,7 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  sitemap: "https://viram-choksi.vercel.app/sitemap.xml",
-  generateRobotsTxt: true,
-};
+const nextConfig = {};
 
 export default nextConfig;
