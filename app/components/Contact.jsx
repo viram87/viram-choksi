@@ -1,7 +1,8 @@
-'use client'
+"use client";
 
 import React, { useState } from "react";
 import { motion as Motion } from "framer-motion";
+import { toast, ToastContainer } from "react-toastify";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -10,10 +11,31 @@ const Contact = () => {
     message: "",
   });
 
+  const [loading, setLoading] = useState(false);
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add your form submission logic here
-    console.log("Form submitted:", formData);
+    setLoading(true);
+
+    fetch("/api/sendEmail", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.success) {
+          toast.success("Message sent successfully");
+          setFormData({ name: "", email: "", message: "" });
+        } else {
+          toast.error("Failed to send message");
+        }
+      })
+      .catch((error) => {
+        toast.error("Something went wrong!");
+      })
+      .finally(() => {
+        setLoading(false);
+      });
   };
 
   const handleChange = (e) => {
@@ -35,6 +57,7 @@ const Contact = () => {
 
   return (
     <div name="contact" className="min-h-screen py-20">
+      <ToastContainer />
       <Motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -126,9 +149,10 @@ const Contact = () => {
               <Motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="w-full bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold py-3 px-6 rounded-lg hover:opacity-90 transition-opacity"
+                disabled={loading}
+                className="w-full disabled:opacity-35 disabled:cursor-not-allowed bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold py-3 px-6 rounded-lg hover:opacity-90 transition-opacity"
               >
-                Send Message
+                {loading ? "Sending..." : "Send Message"}
               </Motion.button>
             </form>
           </Motion.div>
