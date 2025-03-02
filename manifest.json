@@ -1,0 +1,16 @@
+{
+  "name": "Viram Choksi - Frontend Developer",
+  "short_name": "Viram Choksi",
+  "description": "Frontend Developer specializing in React.js, Vue.js, and modern web technologies",
+  "icons": [
+    {
+      "src": "/public/og-image.jpg",
+      "sizes": "32*32",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#0F172A",
+  "background_color": "#0F172A",
+  "display": "standalone",
+  "start_url": "/"
+}
