@@ -13,6 +13,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   metadataBase: new URL("https://viram-choksi.vercel.app"),
+  siteName: "Viram Choksi",
   title: "Viram Choksi | Portfolio",
   description:
     "Frontend Developer specializing in React.js, Vue.js, and modern web technologies. Building responsive and performant web applications with 2.8+ years of experience.",

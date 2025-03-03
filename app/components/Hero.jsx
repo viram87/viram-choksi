@@ -1,5 +1,6 @@
 import React from "react";
 import { motion as Motion } from "framer-motion";
+import { Link } from "react-scroll";
 
 const Hero = () => {
   return (
@@ -68,18 +69,24 @@ const Hero = () => {
             transition={{ duration: 0.5, delay: 0.8 }}
             className="flex flex-wrap justify-center gap-4"
           >
-            <a
-              href="#projects"
-              className="px-8 py-3 text-lg font-medium text-white bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg hover:opacity-90 transition-opacity"
+            <Link
+              smooth={true}
+              duration={500}
+              offset={-80}
+              to="projects"
+              className="px-8 py-3 text-lg font-medium text-white bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg hover:opacity-90 transition-opacity cursor-pointer"
             >
               View My Work
-            </a>
-            <a
-              href="#contact"
-              className="px-8 py-3 text-lg font-medium text-gray-300 border-2 border-gray-300 rounded-lg hover:bg-gray-300 hover:text-[#0F172A] transition-colors"
+            </Link>
+            <Link
+              smooth={true}
+              duration={500}
+              offset={-80}
+              to="contact"
+              className="px-8 py-3 text-lg font-medium text-gray-300 border-2 border-gray-300 rounded-lg hover:bg-gray-300 hover:text-[#0F172A] transition-colors cursor-pointer"
             >
               Contact Me
-            </a>
+            </Link>
           </Motion.div>
 
           {/* Scroll Indicator */}
