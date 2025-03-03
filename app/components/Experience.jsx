@@ -75,7 +75,7 @@ const Experience = () => {
                   >
                     <div className="w-full h-full rounded-full bg-[#0F172A] flex items-center justify-center">
                       <span className="text-lg md:text-2xl font-bold">
-                        {exp.duration.split("–")[0].trim().split("/")[0]}
+                        { index + 1}
                       </span>
                     </div>
                   </div>
